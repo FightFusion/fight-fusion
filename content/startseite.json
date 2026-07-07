@@ -1,15 +1,33 @@
 {
   "hero_titel_1": "Mehr als Kampfsport.",
-  "hero_titel_2": "Wir formen starke Menschen.",
+  "hero_titel_2": "Wir bringen dich ans Ziel",
   "hero_sub": "Das größte Kampfsportgym in Regensburg — Kampfsport, Selbstverteidigung und Fitness auf 2 Etagen, in deinem Tempo vom ersten Tag an.",
   "hero_bild": "",
   "stats": [
-    { "zahl": "8", "text": "Disziplinen" },
-    { "zahl": "2", "text": "Etagen — größtes Kampfsportgym Regensburgs" },
-    { "zahl": "45+", "text": "Jahre Trainererfahrung" },
-    { "zahl": "30+", "text": "Einheiten pro Woche" }
+    {
+      "zahl": "8",
+      "text": "Disziplinen"
+    },
+    {
+      "zahl": "2",
+      "text": "Etagen — größtes Kampfsportgym Regensburgs"
+    },
+    {
+      "zahl": "45+",
+      "text": "Jahre Trainererfahrung"
+    },
+    {
+      "zahl": "30+",
+      "text": "Einheiten pro Woche"
+    }
   ],
   "trust_zeile": "4,9 ★ bei Google · 311 Bewertungen · Das größte Kampfsportgym in Regensburg",
   "kids_plaetze": "X",
-  "startpaket": ["Rashguard", "Fightshorts", "BJJ-Kimono", "Boxhandschuhe", "Zugang Mitglieder-App"]
+  "startpaket": [
+    "Rashguard",
+    "Fightshorts",
+    "BJJ-Kimono",
+    "Boxhandschuhe",
+    "Zugang Mitglieder-App"
+  ]
 }
