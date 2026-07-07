@@ -1,0 +1,7 @@
+{
+  "trainer": [
+    { "name": "Jan Zander", "rolle": "Head Coach", "qualifikation": "", "zitat": "", "foto": "" },
+    { "name": "Hannah Rauch", "rolle": "Head Coach", "qualifikation": "Schwarzgurt Brazilian Jiu-Jitsu", "zitat": "", "foto": "" },
+    { "name": "Das Trainerteam", "rolle": "Trainer", "qualifikation": "Christian Mach · Maximilian Lang · Tim Eylert", "zitat": "Jede Disziplin in erfahrenen Händen — vom ersten Probetraining bis zur Wettkampfvorbereitung.", "foto": "" }
+  ]
+}

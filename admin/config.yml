@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: de
+
+collections:
+  - name: "inhalte"
+    label: "Website-Inhalte"
+    delete: false
+    files:
+      - name: "startseite"
+        label: "Startseite – Texte & Zahlen"
+        file: "content/startseite.json"
+        description: "Die wichtigsten bearbeitbaren Inhalte der Startseite."
+        fields:
+          - { name: "hero_titel_1", label: "Hero – Zeile 1", widget: "string", default: "Mehr als Kampfsport." }
+          - { name: "hero_titel_2", label: "Hero – Zeile 2 (gold)", widget: "string", default: "Wir formen starke Menschen." }
+          - { name: "hero_sub", label: "Hero – Untertitel", widget: "text" }
+          - { name: "hero_bild", label: "Hero – Bild (Jan & Hannah)", widget: "image", required: false }
+          - label: "Kennzahlen (Statistik-Leiste)"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { name: "zahl", label: "Zahl", widget: "string" }
+              - { name: "text", label: "Beschriftung", widget: "string" }
+          - { name: "trust_zeile", label: "Trust-Zeile (über Stimmen)", widget: "string", default: "4,9 ★ bei Google · 311 Bewertungen · Das größte Kampfsportgym in Regensburg" }
+          - { name: "kids_plaetze", label: "Kinder – freie Plätze (Zahl)", widget: "string", default: "X", hint: "Nur die Zahl, z. B. 3" }
+          - label: "Startpaket-Inhalt"
+            name: "startpaket"
+            widget: "list"
+            default: ["Rashguard", "Fightshorts", "BJJ-Kimono", "Boxhandschuhe", "Zugang Mitglieder-App"]
+            field: { name: "item", label: "Bestandteil", widget: "string" }
+
+      - name: "trainer"
+        label: "Trainer"
+        file: "content/trainer.json"
+        fields:
+          - label: "Trainer-Karten"
+            name: "trainer"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "rolle", label: "Rolle", widget: "string" }
+              - { name: "qualifikation", label: "Qualifikation", widget: "string" }
+              - { name: "zitat", label: "Zitat", widget: "text", required: false }
+              - { name: "foto", label: "Foto", widget: "image", required: false }
+
+      - name: "kontakt"
+        label: "Kontakt & Öffnungszeiten"
+        file: "content/kontakt.json"
+        fields:
+          - { name: "whatsapp", label: "WhatsApp-Nummer", widget: "string", default: "+49 1573 5983709" }
+          - { name: "buero", label: "Büro-Telefon", widget: "string", default: "+49 941 30795140" }
+          - { name: "adresse", label: "Adresse", widget: "string", default: "Landshuter Straße 74, 93053 Regensburg" }
