@@ -7,6 +7,8 @@
 <meta name="description" content="Kampfsportschule in Regensburg: BJJ, Thaiboxen, MMA, Grappling, Boxen, Judo & Ringen, Kindertraining ab 5 Jahren und Selbstverteidigung für Frauen. Landshuter Str. 74 – jetzt kostenloses Probetraining sichern.">
 <link rel="canonical" href="https://www.fight-fusion.de/">
 <meta name="theme-color" content="#070707">
+<!-- Netlify Identity: faengt Einladungs-/Reset-Passwort-Links ab, die auf der Startseite landen -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="icon" type="image/png" href="images/img_00_c9c806a84b71.png">
 <link rel="apple-touch-icon" href="images/img_01_a1043ce6f600.png">
 <meta property="og:type" content="website">
@@ -1299,6 +1301,19 @@
       console.error('Decap-CMS-Loader Fehler:', e);
     }
   })();
+  </script>
+
+  <!-- Netlify Identity: nach Einladung/Reset-Passwort automatisch zu /admin/ weiterleiten -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
